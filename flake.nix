@@ -43,6 +43,7 @@
 
             $(just -l |sed 's/^Available recipes:/The following `just` recipes are available:/')
             EOF
+            . ./.env
             exec zsh
           '';
         };
